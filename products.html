@@ -6,46 +6,38 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="fade-page">
+<body>
 
 <header class="header">
-    <h2>Semban Theenai</h2>
-    <input type="text" id="searchInput" class="search">
-    <a href="cart.html">🛒</a>
+<h2>Semban Theenai</h2>
 </header>
-
-<div class="filters">
-<button onclick="filterProducts('all')">All</button>
-<button onclick="filterProducts('coconuts')">Coconuts</button>
-<button onclick="filterProducts('oil')">Oil</button>
-<button onclick="filterProducts('saplings')">Saplings</button>
-</div>
 
 <div class="grid">
 
-<div class="product fade" data-name="coconuts">
+<div class="product">
 <img src="coconut.jpg">
 <h3>Coconuts</h3>
-<input type="number" value="1" min="1" id="q1">
-<button onclick="addToCart('Coconuts','q1')">Add</button>
+<p>Fresh farm coconuts</p>
+<a href="https://wa.me/919842817277?text=Hi I want to order coconuts" class="btn">Order</a>
 </div>
 
-<div class="product fade" data-name="oil">
+<div class="product">
 <img src="oil.jpg">
 <h3>Coconut Oil</h3>
-<input type="number" value="1" min="1" id="q2">
-<button onclick="addToCart('Coconut Oil','q2')">Add</button>
+<p>Cold pressed oil</p>
+<a href="https://wa.me/919842817277?text=Hi I want to order coconut oil" class="btn">Order</a>
 </div>
 
-<div class="product fade" data-name="saplings">
+<div class="product">
 <img src="sapling.jpg">
 <h3>Saplings</h3>
-<input type="number" value="1" min="1" id="q3">
-<button onclick="addToCart('Saplings','q3')">Add</button>
+<p>Healthy coconut plants</p>
+<a href="https://wa.me/919842817277?text=Hi I want to order saplings" class="btn">Order</a>
 </div>
 
 </div>
 
-<script src="script.js"></script>
+<a href="https://wa.me/919842817277?text=Hi I want to order" class="whatsapp-float">💬</a>
+
 </body>
 </html>
