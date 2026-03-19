@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="fade-page">
+
+<header class="header">
+    <h2>Semban Theenai</h2>
+    <input type="text" id="searchInput" class="search">
+    <a href="cart.html">🛒</a>
+</header>
+
+<div class="filters">
+<button onclick="filterProducts('all')">All</button>
+<button onclick="filterProducts('coconuts')">Coconuts</button>
+<button onclick="filterProducts('oil')">Oil</button>
+<button onclick="filterProducts('saplings')">Saplings</button>
+</div>
+
+<div class="grid">
+
+<div class="product fade" data-name="coconuts">
+<img src="coconut.jpg">
+<h3>Coconuts</h3>
+<input type="number" value="1" min="1" id="q1">
+<button onclick="addToCart('Coconuts','q1')">Add</button>
+</div>
+
+<div class="product fade" data-name="oil">
+<img src="oil.jpg">
+<h3>Coconut Oil</h3>
+<input type="number" value="1" min="1" id="q2">
+<button onclick="addToCart('Coconut Oil','q2')">Add</button>
+</div>
+
+<div class="product fade" data-name="saplings">
+<img src="sapling.jpg">
+<h3>Saplings</h3>
+<input type="number" value="1" min="1" id="q3">
+<button onclick="addToCart('Saplings','q3')">Add</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
